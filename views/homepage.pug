@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    header
+      h1= title
+      a(href="/update-cobj") Add to this table →
+    if error
+      div.notice(style="border-color:#e66") #{error}
+    .table-wrap
+      table
+        thead
+          tr
+            th ID
+            th= labels[0]
+            th= labels[1]
+            th= labels[2]
+        tbody
+          each row in rows
+            tr
+              td= row.id
+              td= row.p1
+              td= row.p2
+              td= row.p3

@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    header
+      h1= title
+      a(href="/") ← Return to the homepage
+    if error
+      div.notice(style="border-color:#e66") #{error}
+    form(method="POST", action="/update-cobj")
+      label(for="prop1")= labels[0]
+      input(type="text", name="prop1", id="prop1", required)
+
+      label(for="prop2")= labels[1]
+      input(type="text", name="prop2", id="prop2")
+
+      label(for="prop3")= labels[2]
+      textarea(name="prop3", id="prop3", rows="4")
+
+      button(type="submit") Create Record

@@ -26,3 +26,17 @@ ___
 - All work must be your own. During the grading process we will check the revision history. Submissions that do not meet this requirement will not be considered.
 - You must have at least two new routes in your index.js file and one new pug template for the homepage.
 - You must create a developer test account and link to it in your README.md file. Submissions that do not meet this requirement will not be considered.
+# Integrating With HubSpot I: Foundations Practicum
+
+**Custom Object List View:**  
+https://app.hubspot.com/contacts/50294943/objects/2-48720316/views/all/list
+
+## Run locally
+1) Create `.env` (NOT committed) with:
+   - HUBSPOT_ACCESS_TOKEN
+   - CUSTOM_OBJECT_TYPE
+   - PROP1/PROP2/PROP3 and PROP1_LABEL/PROP2_LABEL/PROP3_LABEL
+2) `npm install`
+3) `npm start`
+4) Visit http://localhost:3000
+
